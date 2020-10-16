@@ -1,0 +1,35 @@
+@import 'variable';
+
+.new-contact {
+
+  &__form {
+    font-size: 2rem;
+    padding: 1em 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin: 0.5em 0;
+
+    &--big {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    font-size: inherit;
+    background-color: $medium-grey;
+    color: $light-grey;
+    border-radius: 5px;
+    padding: 0.6em;
+    margin-top: 0.4em;
+    transition: all 0.5s;
+
+    &:focus {
+      background-color: $medium2-grey;
+      outline-color: $light-blue;
+    }
+  }
+}

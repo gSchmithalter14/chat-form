@@ -1,0 +1,22 @@
+@import 'variable';
+
+.btn {
+  font-size: inherit;
+  font-weight: bold;
+  color: $dark-grey;
+  background-color: $light-blue;
+  width: 100%;
+  padding: 0.5em 1.25em;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0.8em auto;
+  transition: transform .6s;
+
+  &:active {
+    transform: translateY(-5%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
